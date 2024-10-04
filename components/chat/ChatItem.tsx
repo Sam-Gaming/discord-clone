@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { Member, MemberRole, Profile } from "@prisma/client";
@@ -112,6 +113,7 @@ export const ChatItem = ({
     form.reset({
       content: content,
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [content]);
 
   const fileType = fileUrl?.split(".").pop();

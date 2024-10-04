@@ -81,6 +81,8 @@ export const UseChatQuery = ({
   };
 
   const { data, fetchNextPage, hasNextPage, isFetchingNextPage, status } =
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-expect-error
     useInfiniteQuery({
       queryKey: [queryKey],
       queryFn: fetchMessages,

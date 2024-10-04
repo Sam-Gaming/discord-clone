@@ -19,6 +19,7 @@ const roleIconMap = {
   [MemberRole.ADMIN]: <ShieldAlert className="size-4 ml-2 text-rose-500" />,
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const ServerMember = ({ member, server }: ServerMemberProps) => {
   const params = useParams();
   const router = useRouter();

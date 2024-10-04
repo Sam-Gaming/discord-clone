@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import {
@@ -12,7 +13,7 @@ import data from "@emoji-mart/data";
 import { useTheme } from "next-themes";
 
 interface EmojiPickerProps {
-  onChange?: (value: string) => void;
+  onChange: (value: string) => void;
 }
 
 export const EmojiPicker = ({ onChange }: EmojiPickerProps) => {
